@@ -40,13 +40,27 @@ function stopwatch()
             hr++;
             mn=0;
         }
-        if(hr>0)
-        document.getElementById('hour').innerHTML=hr;
-        if(mn>0)
-        document.getElementById('minute').innerHTML=mn;
-        if(sec>0)
-        document.getElementById('second').innerHTML=sec;
-        document.getElementById('miliseconds').innerHTML=cnt;
+        var hrstring=hr,mnstring=mn,secstring=sec,cntstring=cnt;
+        if(hr<10)
+        hrstring="0"+hr;
+        else
+        hrstring=hr;
+        if(mn<10)
+        mnstring="0"+mn;
+        else
+        mnstring=mn;
+        if(sec<10)
+        secstring="0"+sec;
+        else
+        secstring=sec;
+        if(cnt<10)
+        cntstring="0"+cnt;
+        else
+        cntstring=cnt;
+        document.getElementById('hour').innerHTML=hrstring;
+        document.getElementById('minute').innerHTML=mnstring;
+        document.getElementById('second').innerHTML=secstring;
+        document.getElementById('miliseconds').innerHTML=cntstring;
         setTimeout("stopwatch()",10);
     }
 }
