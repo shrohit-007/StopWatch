@@ -4,14 +4,20 @@ let reset=document.getElementById('reset');
 let cnt=0;
 let hr=0,mn=0,sec=0;
 let timerflag=false;
+let startcheck=false;
 start.addEventListener('click',function(){
     timerflag=true;
+    if(!startcheck)
     stopwatch();
+    startcheck=true;
+
 });
 stop.addEventListener('click',function(){
+    startcheck=false;
     timerflag=false;
 });
 reset.addEventListener('click',function(){
+    startcheck=false;
     timerflag=false;
     document.getElementById('hour').innerHTML="00";
     document.getElementById('minute').innerHTML="00";
