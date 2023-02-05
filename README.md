@@ -13,5 +13,5 @@ DESIGN->Responsive Web Design
 
 
 
-                                                              Hope you will like it!
-                                                                         🙂
+                                                Hope you will like it!
+                                                         🙂
