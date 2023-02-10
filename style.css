@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: #344953;
+    background-color: #070909;
 }
 #heading{
     font-size:100px;
@@ -13,12 +13,12 @@ body{
 .main{
     text-align: center;
     margin-top:10vh;
-    color:white;
+    color:#b3b6b7;
     font-size:200px;
 }
 .subscript{
     font-size:50px;
-    color:white;
+    color:#b3b6b7;
 }
 .down-menu{
     font-size:25px;
@@ -27,20 +27,55 @@ body{
     padding:10px;
 }
 #start{
-    background-color:#58d68d;
-    padding:5px 25px;
+    background-color:#85C1E9;
+    display:inline-block;
+    width:120px;
+    padding:20px 0px;
     margin:10px;
+    border-radius: 70%;
+    cursor:pointer;
 }
-#stop{
-    background-color:#3498d8;
-    padding:5px 25px;
+#lap{
+    background-color:#707B7C ;
+    display:inline-block;
+    width:120px;
+    padding:20px 0px;
     margin:10px;
+    border-radius: 70%;
+    cursor:pointer;
 }
 #reset{
+    display:inline-block;
     background-color:#e74c3c;
-    padding:5px 25px;
+    width:120px;
+    padding:20px 0px;
     margin:10px;
+    border-radius: 70%;
+    cursor:pointer;
 }
+hr{
+    margin:20px 0px;
+    display:none;
+}
+#lapheader{
+    display:none;
+    color:#b3b6b7;
+    font-size:3vw;
+    font-weight: bold;
+}
+#lapcnt{
+    display:inline-block;
+    margin-left:12vw;
+}
+#laptime{
+    display:inline-block;
+    margin-left:27vw;
+}
+#overalltime{
+    display:inline-block;
+    margin-left:17vw;
+}
+
 @media screen and (max-width:600px)
 {
     body{
@@ -73,17 +108,26 @@ body{
     }
     #start{
         display:block;
-        background-color:#58d68d;
+        background-color:#85C1E9;
+        text-align: center;
         padding:5px 10px;
+        border-radius: 5%;
+        width:100%;
     }
-    #stop{
+    #lap{
         display:block;
-        background-color:#3498d8;
+        border-radius: 5%;
+        background-color:#707B7C ;
+        text-align: center;
         padding:5px 10px;
+        width:100%;
     }
     #reset{
         display:block;
         background-color:#e74c3c;
+        text-align: center;
         padding:5px 10px;
+        border-radius: 5%;
+        width:100%;
     }
 }
